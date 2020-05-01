@@ -8,7 +8,7 @@ test:
   stage: test
   script:
   - bundle install
-  - bundle exec cucumber
+  - bundle exec cucumber -p ci
   artifacts:
     when: always
     paths:
