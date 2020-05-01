@@ -7,38 +7,38 @@ class Ideia
     end
     
     def preencher_titulo(titulo_ideia)
-        find(:css, 'input[name=title]').set titulo_ideia
+        find('input[name=title]').set titulo_ideia
     end
 
     def preencher_categoria(categoria_ideia)
-        find(:css, 'input[name=category]').set categoria_ideia
+        find('input[name=category]').set categoria_ideia
     end
     
     def preencher_linkimagem(linkimagem_ideia)
-        find(:css, 'input[name=image]').set linkimagem_ideia
+        find('input[name=image]').set linkimagem_ideia
     end
 
     def preencher_descricao(descricao_ideia)
-        find(:css, 'textarea[name=description]').set descricao_ideia
+        find('textarea[name=description]').set descricao_ideia
     end
 
     def preencher_linkideia(linkideia_ideia)
-        find(:css, 'input[name=link]').set linkideia_ideia
+        find('input[name=link]').set linkideia_ideia
     end
 
-     def clicar_adicionar
-         find(:xpath, '//*[@id="btnadicionar"]').click
-     end
+    def clicar_adicionar
+        find('button[id=btnadicionar]').click
+    end
 
     def clicar_salvar
-        find(:css, 'button[id=btnsalvar]').click
+        find('button[id=btnsalvar]').click
     end
 
     def clicar_voltar
-        find(:css, 'a[id=btnvoltar]').click
+        find('a[id=btnvoltar]').click
     end
 
     def clicar_inicio
-        find(:css,'button[id=Início]').click
+        find('button[id=Início]').click
     end
 end
