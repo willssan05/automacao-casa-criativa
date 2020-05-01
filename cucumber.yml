@@ -1,0 +1,12 @@
+---
+
+default: -p pretty -p homolog -p html -p hmg -p json -p chrome
+ci: -p homolog -p headless -p json -p pretty
+pretty: --format pretty
+homolog: AMBIENTE=homolog
+html: --format html --out=report/relatorio.html
+json: --format json --out=report/relatorio.json
+hmg: ENVIRONMENT_TYPE=hmg
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+headless: BROWSER=headless

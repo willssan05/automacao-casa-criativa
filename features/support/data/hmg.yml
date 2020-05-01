@@ -1,0 +1,13 @@
+karaoke:
+  titulo: Karaoke
+  categoria:  Diversão
+  linkImagem: https://image.flaticon.com/icons/svg/2729/2729032.svg
+  descricao: Diversão em Família
+  linkideia: https://rocketseat.com.br
+
+exercicio:
+  titulo: Exercicios
+  categoria:  Saúde
+  linkImagem: https://image.flaticon.com/icons/svg/2729/2729005.svg
+  descricao: Cuidando da saúde
+  linkideia: https://rocketseat.com.br
