@@ -4,6 +4,7 @@ end
 
 Dado("clique no botao adicionar nova ideia") do
   @ideia_page.go
+  
   page.find(:css, 'button[id=btnadicionar]').click 
 end
 
