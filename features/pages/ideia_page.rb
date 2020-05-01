@@ -27,7 +27,7 @@ class Ideia
     end
 
     def clicar_adicionar
-        page.find(:css 'button[id=btnadicionar]').click
+        page.find(:css, 'button[id=btnadicionar]').click
     end
 
     def clicar_salvar
