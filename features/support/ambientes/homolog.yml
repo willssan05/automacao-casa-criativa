@@ -1,4 +1,4 @@
 
-url_padrao: 'http://localhost:3000/'
-#url_padrao: 'https://aplicacao-nodejs.herokuapp.com/' 
+#url_padrao: 'http://localhost:3000/'
+url_padrao: 'https://aplicacao-nodejs.herokuapp.com/' 
 
