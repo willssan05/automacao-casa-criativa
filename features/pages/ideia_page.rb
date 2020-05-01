@@ -26,9 +26,9 @@ class Ideia
         find('input[name=link]').set linkideia_ideia
     end
 
-    def clicar_adicionar
-        page.find(:css, 'button[id=btnadicionar]').click
-    end
+    # def clicar_adicionar
+    #     page.find(:css, 'button[id=btnadicionar]').click
+    # end
 
     def clicar_salvar
         find('button[id=btnsalvar]').click

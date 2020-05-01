@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 50000
+              "duration": 28000
             }
           },
           {
@@ -36,7 +36,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 42000
+              "duration": 22000
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18000
+              "duration": 9000
             }
           }
         ],
@@ -59,7 +59,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2958227000
+              "duration": 2714312000
             }
           },
           {
@@ -71,7 +71,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 161204000
+              "duration": 209017000
             }
           },
           {
@@ -79,11 +79,11 @@
             "name": "preencho os campos com as informaçõs da idéia 'karaoke'",
             "line": 12,
             "match": {
-              "location": "features/step_definitions/cadastro_ideia.rb:9"
+              "location": "features/step_definitions/cadastro_ideia.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 837609000
+              "duration": 864675000
             }
           },
           {
@@ -91,11 +91,11 @@
             "name": "clico no botao salvar",
             "line": 13,
             "match": {
-              "location": "features/step_definitions/cadastro_ideia.rb:21"
+              "location": "features/step_definitions/cadastro_ideia.rb:22"
             },
             "result": {
               "status": "passed",
-              "duration": 198295000
+              "duration": 143485000
             }
           },
           {
@@ -103,11 +103,11 @@
             "name": "vejo a minha ideia cadastrada",
             "line": 14,
             "match": {
-              "location": "features/step_definitions/cadastro_ideia.rb:25"
+              "location": "features/step_definitions/cadastro_ideia.rb:26"
             },
             "result": {
               "status": "passed",
-              "duration": 140165000
+              "duration": 82823000
             }
           }
         ],
@@ -124,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 638371000
+              "duration": 317304000
             }
           },
           {
@@ -133,7 +133,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 81432000
+              "duration": 79413000
             }
           }
         ]
@@ -158,7 +158,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 43000
+              "duration": 35000
             }
           },
           {
@@ -167,7 +167,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54000
+              "duration": 51000
             }
           },
           {
@@ -176,7 +176,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13000
+              "duration": 21000
             }
           }
         ],
@@ -190,7 +190,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 76130000
+              "duration": 106608000
             }
           },
           {
@@ -202,7 +202,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 92481000
+              "duration": 174707000
             }
           },
           {
@@ -210,11 +210,11 @@
             "name": "preencho os campos com as informaçõs da idéia 'exercicio'",
             "line": 12,
             "match": {
-              "location": "features/step_definitions/cadastro_ideia.rb:9"
+              "location": "features/step_definitions/cadastro_ideia.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 924518000
+              "duration": 692999000
             }
           },
           {
@@ -222,11 +222,11 @@
             "name": "clico no botao salvar",
             "line": 13,
             "match": {
-              "location": "features/step_definitions/cadastro_ideia.rb:21"
+              "location": "features/step_definitions/cadastro_ideia.rb:22"
             },
             "result": {
               "status": "passed",
-              "duration": 193378000
+              "duration": 157959000
             }
           },
           {
@@ -234,11 +234,11 @@
             "name": "vejo a minha ideia cadastrada",
             "line": 14,
             "match": {
-              "location": "features/step_definitions/cadastro_ideia.rb:25"
+              "location": "features/step_definitions/cadastro_ideia.rb:26"
             },
             "result": {
               "status": "passed",
-              "duration": 70852000
+              "duration": 69372000
             }
           }
         ],
@@ -255,7 +255,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 332335000
+              "duration": 694792000
             }
           },
           {
@@ -264,7 +264,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 70158000
+              "duration": 114889000
             }
           }
         ]
