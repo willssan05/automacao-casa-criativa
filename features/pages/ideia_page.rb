@@ -27,7 +27,7 @@ class Ideia
     end
 
      def clicar_adicionar
-         find(:css, "button[onclick='onOff()']").click
+         find(:xpath, '//*[@id="btnadicionar"]').click
      end
 
     def clicar_salvar
