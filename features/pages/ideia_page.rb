@@ -27,7 +27,7 @@ class Ideia
     end
 
     def clicar_adicionar
-        find('button', text: '+ Adicionar Ideia').click
+        page.find('button', text: '+ Adicionar Ideia').click
     end
 
     def clicar_salvar
