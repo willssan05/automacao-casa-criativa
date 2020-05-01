@@ -3,7 +3,7 @@ Dado("que acesse o site casa criativa") do
 end
 
 Dado("clique no botao adicionar nova ideia") do
-  # @ideia_page.clicar_adicionar
+  @ideia_page.clicar_adicionar
 end
 
 Quando("preencho os campos com as informaçõs da idéia {string}") do |diversao_code|
