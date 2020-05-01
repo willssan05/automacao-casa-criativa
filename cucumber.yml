@@ -1,7 +1,7 @@
 ---
 
 default: -p pretty -p dev -p html -p json -p chrome
-ci: -p homolog -p headless -p json -p pretty -p html
+ci: -p dev -p headless -p json -p pretty -p html
 pretty: --format pretty
 homolog: AMBIENTE=homolog
 dev: AMBIENTE=dev
