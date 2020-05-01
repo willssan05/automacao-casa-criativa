@@ -3,6 +3,7 @@ Dado("que acesse o site casa criativa") do
 end
 
 Dado("clique no botao adicionar nova ideia") do
+  sleep 5
   @ideia_page.clicar_adicionar
 end
 
