@@ -1,6 +1,6 @@
 ---
 
-default: -p pretty -p homolog -p html -p hmg -p json -p ci
+default: -p pretty -p homolog -p html -p hmg -p json -p chrome
 ci: -p homolog -p headless -p json -p pretty
 pretty: --format pretty
 homolog: AMBIENTE=homolog

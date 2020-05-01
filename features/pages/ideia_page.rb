@@ -27,7 +27,7 @@ class Ideia
     end
 
     def clicar_adicionar
-        click_link_or_button 'Adicionar Ideia'
+        find('button[id=btnadicionar]').click
     end
 
     def clicar_salvar
