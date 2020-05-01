@@ -1,11 +1,9 @@
 Dado("que acesse o site casa criativa") do
-  @ideia_page.go
+  @ideia_page.load
 end
 
 Dado("clique no botao adicionar nova ideia") do
-  @ideia_page.go
-  
-  page.find(:css, 'button[id=btnadicionar]').click 
+  @ideia_page.clicar_adicionar
 end
 
 Quando("preencho os campos com as informaçõs da idéia {string}") do |diversao_code|
