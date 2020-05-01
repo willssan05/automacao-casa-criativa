@@ -12,4 +12,4 @@ test:
   artifacts:
     when: always
     paths:
-       - relatorios/relatorio.html
+       - report/relatorio.html
