@@ -1,5 +1,5 @@
 Dado("que acesse o site casa criativa") do
-  @ideia_page.load
+  @ideia_page.go
 end
 
 Dado("clique no botao adicionar nova ideia") do

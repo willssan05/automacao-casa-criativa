@@ -1,57 +1,44 @@
-class Ideia < SitePrism::Page
-    
-    set_url ''
+class Ideia
 
-    element :btnadicionar, '#btnadicionar'
-    element :titulo, 'input[name=title]'
-    element :categoria, 'input[name=category]'
-    element :linkimagem, 'input[name=image]'
-    element :descricao, 'textarea[name=description]'
-    element :linkideia, 'input[name=link]'
-    element :btnsalvar, '#btnsalvar'
-    element :btnvoltar, 'a[id="btnvoltar"]'
-    element :btninicio, '#btninicio'
+    include Capybara::DSL
+
+    def go
+        visit 'http://localhost:3000'
+    end
     
     def preencher_titulo(titulo_ideia)
-        titulo.visible?
-        titulo.set titulo_ideia
+        find('input[name=title]').set titulo_ideia
     end
 
     def preencher_categoria(categoria_ideia)
-        categoria.visible?
-        categoria.set categoria_ideia
+        find('input[name=category]').set categoria_ideia
     end
     
     def preencher_linkimagem(linkimagem_ideia)
-        linkimagem.visible?
-        linkimagem.set linkimagem_ideia
+        find('input[name=image]').set linkimagem_ideia
     end
 
     def preencher_descricao(descricao_ideia)
-        descricao.visible?
-        descricao.set descricao_ideia
+        find('textarea[name=description]').set descricao_ideia
     end
 
     def preencher_linkideia(linkideia_ideia)
-        linkideia.visible?
-        linkideia.set linkideia_ideia
+        find('input[name=link]').set linkideia_ideia
     end
 
     def clicar_adicionar
-        btnadicionar.click
+        find(:css, 'button[id=btnadicionar]').click
     end
 
     def clicar_salvar
-        btnsalvar.click
+        find('button[id=btnsalvar]').click
     end
 
     def clicar_voltar
-        btnvoltar.visible?
-        btnvoltar.click
+        find('a[id=btnvoltar]').click
     end
 
     def clicar_inicio
-        btninicio.visible?
-        btninicio.click
+        find('button[id=Início]').click
     end
 end
