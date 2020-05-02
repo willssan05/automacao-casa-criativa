@@ -1,5 +1,5 @@
 ###
-### QA NINJA
+### IMAGEM CUSTOMIZADA PARA APLICAÇAO CASA CRIATIVA
 ###
 
 FROM ruby:2.6.5-stretch
@@ -115,3 +115,10 @@ LABEL io.qaninja.preserve-entrypoint=true
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["/bin/sh"]
+
+RUN apt-get install git-core curl build-essential openssl libssl-dev \
+ && git clone https://github.com/nodejs/node.git \
+ && cd node \
+ && ./configure \
+ && make \
+ && sudo make install
