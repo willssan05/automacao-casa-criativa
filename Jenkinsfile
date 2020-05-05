@@ -13,9 +13,8 @@ pipeline {
         }
     }
     
-    stage('Tests') {
+    stage('Running Test') {
          steps {
-         echo 'Running regression tests'
          git url: "https://github.com/willssan05/automacao-casa-criativa.git",
          branch: 'master'
          sh 'rm -f Gemfile.lock'
@@ -24,10 +23,11 @@ pipeline {
          }
       }
 
-      stage('Deploy') {
-         steps {
-         echo 'Running Deploy'
-         }
-      }
+    stage('Acceptance') {
+        steps {
+        echo 'Wait for acceptance by User'
+        input(message: 'Go to production?', ok: 'Yes')
+        }   
     }
+  }
 }
