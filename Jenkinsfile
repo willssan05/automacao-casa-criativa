@@ -34,6 +34,8 @@ pipeline {
       withCredentials([sshUserPrivateKey(credentialsId: 'github', keyFileVariable: 'SSH_KEY')]) {
         sh 'git config --global user.name "willssano5"'
         sh 'git config --global user.email "willssan05@gmail.com"'
+        sh 'git remote add origin git@github.com:willssan05/automacao-casa-criativa.git'
+        sh 'git add '
         sh 'git commit --allow-empty -m "test withCredentials"'
         sh 'git push origin master'
       }
