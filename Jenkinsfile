@@ -32,7 +32,7 @@ pipeline {
     stage ("Merge pull request") {
     steps { 
         withCredentials([usernamePassword(credentialsId: 'github', usernameVariable: 'ACCESS_TOKEN_USERNAME', passwordVariable: 'ACCESS_TOKEN_PASSWORD',)]) {
-            sh "curl -X PUT -d '{\"commit_title\": \"Merge pull request\"}'  https://github.com/willssan05/aplicacao-nodejs.git/pulls/$CHANGE_ID/merge?access_token=$ACCESS_TOKEN_PASSWORD"
+            sh "curl -X PUT -d '{\"commit_title\": \"Merge pull request\"}'  https://github.com/willssan05/aplicacao-nodejs.git/pulls/merge?access_token=$ACCESS_TOKEN_PASSWORD"
         }
       }
     }
