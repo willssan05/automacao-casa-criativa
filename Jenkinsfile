@@ -31,7 +31,7 @@ pipeline {
     }
     stage('Test Git') {
     steps {
-      withCredentials([usernamePassword(credentialsId: 'github',)]) {
+      withCredentials([sshUserPrivateKey(credentialsId: 'github', keyFileVariable: 'SSH_KEY')]) {
         sh 'git commit --allow-empty -m "test withCredentials"'
         sh 'git push origin master'
       }
