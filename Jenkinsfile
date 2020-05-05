@@ -32,6 +32,7 @@ pipeline {
     stage('Test Git') {
     steps {
       withCredentials([sshUserPrivateKey(credentialsId: 'github', keyFileVariable: 'SSH_KEY')]) {
+        sh 'git config --global credential.helper wincred'
         sh 'git commit --allow-empty -m "test withCredentials"'
         sh 'git push origin master'
       }
