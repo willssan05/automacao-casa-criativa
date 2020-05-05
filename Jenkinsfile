@@ -34,7 +34,7 @@ pipeline {
       withCredentials([sshUserPrivateKey(credentialsId: 'github', keyFileVariable: 'SSH_KEY')]) {
         sh 'git config --global credential.helper wincred'
         sh 'git config --global user.name "willssano5"'
-        sh 'git config --global user.email "willssan05@gmail.com"
+        sh 'git config --global user.email "willssan05@gmail.com"'
         sh 'git commit --allow-empty -m "test withCredentials"'
         sh 'git push origin master'
       }
