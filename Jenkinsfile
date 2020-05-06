@@ -37,7 +37,7 @@ pipeline {
         sh 'git remote add jenkins git@github.com:willssan05/automacao-casa-criativa.git'
         sh 'git add '
         sh 'git commit --allow-empty -m "test withCredentials"'
-        sh 'git push origin master'
+        sh 'git push jenkins master'
       }
     }
    }
