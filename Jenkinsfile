@@ -21,26 +21,23 @@ pipeline {
          sh 'bundle install'
          sh 'bundle exec cucumber -p ci'
          }
-      }
+        }
 
-    stage('Acceptance') {
+       stage('Acceptance') {
         steps {
         echo 'Wait for acceptance by User'
         input(message: 'Go to production?', ok: 'Yes')
         }   
-    }
-    stage('Test Git') {
-    steps {
-      withCredentials([sshUserPrivateKey(credentialsId: 'github', keyFileVariable: 'SSH_KEY')]) {
-        sh 'git config --global user.name "willssano5"'
-        sh 'git config --global user.email "willssan05@gmail.com"'
-        sh 'git remote add deploy2 git@github.com:willssan05/automacao-casa-criativa.git'
-        sh 'git add '
-        sh 'git commit --allow-empty -m "test withCredentials"'
-        sh 'git push deploy2 master'
+       }
+       timestamps {
+         node () {
+	     stage ('deploy-app-casa-criativa - Checkout') {
+ 	     checkout([$class: 'GitSCM', branches: [[name: '*/develop']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/willssan05/aplicacao-nodejs.git']]]) 
+	     }
+        }
+       }
       }
-    }
-   }
-  }
-}
+     }
+
+    
 
