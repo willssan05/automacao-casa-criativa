@@ -34,10 +34,10 @@ pipeline {
       withCredentials([sshUserPrivateKey(credentialsId: 'github', keyFileVariable: 'SSH_KEY')]) {
         sh 'git config --global user.name "willssano5"'
         sh 'git config --global user.email "willssan05@gmail.com"'
-        sh 'git remote add deploy git@github.com:willssan05/automacao-casa-criativa.git'
+        sh 'git remote add deploy1 git@github.com:willssan05/automacao-casa-criativa.git'
         sh 'git add '
         sh 'git commit --allow-empty -m "test withCredentials"'
-        sh 'git push deploy master'
+        sh 'git push deploy1 master'
       }
     }
    }
