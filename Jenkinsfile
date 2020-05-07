@@ -30,5 +30,10 @@ pipeline {
         input(message: 'Go to production?', ok: 'Yes')
         }   
        }
-     }
+	     stage ('heroku - Deploy') {
+	     steps {
+ 	     checkout([$class: 'GitSCM', branches: [[name: '*/develop']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/willssan05/aplicacao-nodejs.git']]]) 
+	    }
+       }
     }
+}
