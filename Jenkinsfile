@@ -15,6 +15,7 @@ pipeline {
     
     stage('Running Test') {
          steps {
+         sleep 40
          git url: "https://github.com/willssan05/automacao-casa-criativa.git",
          branch: 'master'
          sh 'rm -f Gemfile.lock'
@@ -29,11 +30,5 @@ pipeline {
         input(message: 'Go to production?', ok: 'Yes')
         }   
        }
-	     stage ('deploy-app-casa-criativa - Checkout') {
-	     steps {
- 	     checkout([$class: 'GitSCM', branches: [[name: '*/develop']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/willssan05/aplicacao-nodejs.git']]]) 
-        
-       }
-      }
      }
     }
