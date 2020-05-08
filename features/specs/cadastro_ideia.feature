@@ -9,12 +9,14 @@ Esquema do Cenario: Cadastrar uma nova ideia
 
 Dado que acesse o site casa criativa
 E clique no botao adicionar nova ideia
-Quando preencho os campos com as informaçõs da idéia '<ideia>'
+Quando preencho os campos com as informaçõs da idéia '<ideias>'
 E clico no botao salvar
 Então vejo a minha ideia cadastrada
 
 Exemplos:
 
-|ideia       | 
-|karaoke     | 
-|exercicio   |
+|ideias        | 
+|karaoke       | 
+|exercicio     |
+|meditacao     |
+|alimentacao   |

@@ -3,11 +3,25 @@ karaoke:
   categoria:  Diversão
   linkImagem: https://image.flaticon.com/icons/svg/2729/2729032.svg
   descricao: Diversão em Família
-  linkideia: https://rocketseat.com.br
+  linkideia: https://www.submarino.com.br/busca/karoke
 
 exercicio:
   titulo: Exercicios
   categoria:  Saúde
   linkImagem: https://image.flaticon.com/icons/svg/2729/2729005.svg
   descricao: Cuidando da saúde
-  linkideia: https://rocketseat.com.br
+  linkideia: https://www.exercicioemcasa.com.br/
+
+meditacao:
+  titulo: Meditação
+  categoria:  Saúde
+  linkImagem: https://www.flaticon.com/premium-icon/icons/svg/2773/2773699.svg
+  descricao: Cuidando da saúde mental
+  linkideia: https://www.personare.com.br/meditacao
+
+alimentacao:
+  titulo: Alimentacao
+  categoria:  Alimentação
+  linkImagem: https://image.flaticon.com/icons/svg/2836/2836568.svg
+  descricao: Cuidando da alimentação
+  linkideia: https://blog.gsuplementos.com.br/comida-vegetariana/
