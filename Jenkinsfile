@@ -21,19 +21,24 @@ pipeline {
          sh 'rm -f Gemfile.lock'
          sh 'bundle install'
          sh 'bundle exec cucumber -p ci'
-         }
-        }
-
-       stage('Acceptance') {
-        steps {
-        echo 'Wait for acceptance by User'
-        input(message: 'Go to production?', ok: 'Yes')
-        }   
-       }
-	     stage ('heroku - Deploy') {
-	     steps {
- 	     checkout([$class: 'GitSCM', branches: [[name: '*/develop']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/willssan05/aplicacao-nodejs.git']]]) 
-	    }
-       }
+         
+      }
     }
-}
+       stage('Cucumber Reports') {
+       steps {
+    // process cucumber reports
+    // send report to slack
+    //  slackSend channel: 'desenvolvimento-carreira-qa', color: '#33AFFF', message: "*STARTED*: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'\n *More info at:* ${env.BUILD_URL}", teamDomain: 'center-tech', tokenCredentialId: 'slack'
+       cucumber buildStatus: "UNSTABLE", fileIncludePattern: "**/relatorio.json",jsonReportDirectory: 'report'
+       publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'report', reportFiles: 'report.html', reportName: 'Test Report', reportTitles: ''])
+      }
+     }
+      stage('Push image')
+      steps{
+          docker.withRegistry('https://registry.hub.docker.com','docker-hub-credentials') {
+              app.push("${env.BUILD_NUMBER}")
+              app.push({"latest"})
+          }
+      }
+    }
+   }
