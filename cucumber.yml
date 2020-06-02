@@ -1,12 +1,12 @@
 ---
 
-default: -p pretty -p dev -p html -p json -p chrome
+default: -p pretty -p local -p html -p chrome
 ci: -p dev -p headless -p json -p pretty -p html
 pretty: --format pretty
 homolog: AMBIENTE=homolog
 dev: AMBIENTE=dev
+local: AMBIENTE=local
 html: --format html --out=report/relatorio.html
-json: --format json --out=report/relatorio.json
 firefox: BROWSER=firefox
 chrome: BROWSER=chrome
 headless: BROWSER=headless
