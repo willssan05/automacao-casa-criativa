@@ -3,6 +3,6 @@ module Helper
        caminho_arquivo = "report/screenshots/test_#{resultado}"
         foto = "#{caminho_arquivo}/#{nome_arquivo}.png"
         page.save_screenshot(foto)
-        embed(foto, 'image/png', 'Clique aqui')        
+        attach(foto, 'image/png')        
     end
 end
